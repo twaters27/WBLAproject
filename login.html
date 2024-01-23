@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <h2 class="welcome">Welcome Back!</h2>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <button class="normal" type="button" onclick="login()">Login</button>
+          <button id="goToMake" type="button">Make an Account</button>
+        </form>
+      </div>
+  
+      <!-- Create Account Container -->
+      <div class="container" id="create-account-container" style="display: none">
+        <h2 class="welcome">Create Account</h2>
+        <form id="create-account-form">
+          <input type="text" id="new-username" placeholder="Username" required />
+          <input
+            type="password"
+            id="new-password"
+            placeholder="Password"
+            required
+          />
+          <button class="normal" type="button" onclick="createAccount()">
+            Create Account
+          </button>
+          <button id="goToLogin" type="button">Go to Login</button>
+        </form>
+      </div>
+    <script src="login.js"></script>
+</body>
+</html>
