@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@font-face {
+  font-family: horizon;
+  src: url(font/horizon.otf);
+}
 
 body {
   background-image: url("./images/pikture.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-position: top;
 }
 
 [class*="col"] {
-  /* padding: 1rem; */
+  padding: 1rem;
   background-color: #0d160d;
-  color: #e1a298;
-  border: 2px solid #fff;
+  color: white;
+  border: 1px solid #fff;
 }
 
 .navbar {
@@ -26,10 +32,6 @@ body {
   font-family: "Poppins", sans-serif;
 } */
 
-.navbar-brand img {
-  /* margin-right: 10px; */
-}
-
 .logo-div {
   border-right: 4px solid gray;
 }
@@ -40,22 +42,12 @@ body {
 }
 
 .logo-div p {
-  font-weight: 800;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 3px;
+  font-family: "horizon";
+  letter-spacing: 1px;
 }
 
 .nav-link {
   color: white;
-  /* margin: 200px; */
-}
-
-.h-10 {
-  height: 10%;
-}
-
-.h-20 {
-  height: 20%;
 }
 
 .w-15 {
@@ -78,7 +70,9 @@ light pink ecd2da */
     margin: auto;
     border: none;
   }
+
 }
+
 /*  */
 div#aboutpgstory {
   width: 70%;
@@ -94,10 +88,10 @@ div#aboutpgstory p {
   font-family: "Poppins", sans-serif;
   line-height: 30px;
 }
-div.col-2 {
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+div.col-xl-2 {
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3); */
 }
-div.col-2:hover {
+div.col-xl-2:hover {
   animation: size-alter 2s ease infinite;
   cursor: pointer;
 }
