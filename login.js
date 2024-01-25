@@ -14,7 +14,7 @@ function login() {
   // Check if the provided username and password match
   if (checkCredentials(username, password)) {
     window.location.href = "index.html";
-    loginNav.innerHTML = '${username}';
+    localStorage.setItem("username", username)
   } else {
     alert("Incorrect Password or Username, Please try again.");
   }
@@ -33,6 +33,7 @@ function createAccount() {
   } else {
     // Save the new account in localStorage
     localStorage.setItem(newUsername, newPassword);
+    localStorage.setItem("username", newUsername);
     alert("Account created successfully! You can now log in.");
   }
 }

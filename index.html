@@ -51,30 +51,54 @@
                 >
                 <a href="about_index.html" class="nav-link mx-5">About</a>
                 <a href="contact.html" class="nav-link mx-5">Contact</a>
-                <a href="login.html" class="nav-link mx-5"
+                <a href="login.html" id="login-button" class="nav-link mx-5"
                   ><span id="loginNav">Login/Register</span></a
                 >
+
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle bg-dark mt-2"
+                    id="user-dropdown"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    username should be here
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" id="cart-button" href="#"
+                        >Cart</a>
+                    </li>
+                    <li><a class="dropdown-item" id="changeAccount" href="#">Change Accounts</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </nav>
       </div>
 
+      <h1 id="total-cart-deductable" class="bg-dark">Total Cart Deductable:</h1>
+
       <div class="row justify-content-between mt-2">
         <div class="col col-xl-2 w-15">
           <img
             src="./images/kettlebellAI.jfif"
             alt="kettlebell"
-            height="100%"
+            height="90%"
             width="100%"
+            title=" Kettle Bells, this set of kettle bells weigh from 5lbs to 50lbs. ($75)"
           />
         </div>
         <div class="col col-xl-2 w-15">
           <img
             src="images/jumpropeAI.jfif"
             alt="jumprope"
-            height="100%"
+            height="90%"
             width="100%"
+            title = "Jump Rope, highly resistant and durable so it won't break when you step on it. ($10)"
           />
         </div>
 
@@ -84,16 +108,18 @@
           <img
             src="images/proteinjarAI.jfif"
             alt="protein"
-            height="100%"
+            height="90%"
             width="100%"
+
           />
         </div>
         <div class="col col-xl-2 w-15">
           <img
             src="images/DumbellsAI.jfif"
             alt="dumbells"
-            height="100%"
+            height="90%"
             width="100%"
+            title="Dumbells "
           />
         </div>
       </div>
@@ -103,36 +129,125 @@
           <img
             src="images/runninshoesAI.jfif"
             alt="shoes"
-            height="100%"
+            height="90%"
             width="100%"
+            title = "Running shoes that are durable so you can run for miles. ($40)"
           />
         </div>
-        <div class="col col-xl-2 w-15"><img src="images/punchingbagAI.jfif" alt="punching bag" height="100%" width="100%"></div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/punchingbagAI.jfif"
+            alt="punching bag"
+            height="90%"
+            width="100%"
+            title="Punching Bag, 500lbs, chain that can hold up even with intense force. ($90)"
+          />
+        </div>
 
         <div class="w-100 d-lg-none"></div>
 
-        <div class="col col-xl-2 w-15"><img src="images/standingDesk.png" alt="standing desk" height="100%" width="100%"></div>
-        <div class="col col-xl-2 w-15"><img src="images/hula_hoop.png" alt="hula hoop" height="100%" width="100%"></div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/standingDesk.png"
+            alt="standing desk"
+            height="90%"
+            width="100%"
+            title="Standing Desk for all human heights. ($100)"
+          />
+        </div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/hula_hoop.png"
+            alt="hula hoop"
+            height="90%"
+            width="100%"
+            title="Hula Hoop stable so it doesn't fall apart. ($10)"
+          />
+        </div>
       </div>
 
       <div class="row justify-content-between mt-3">
-        <div class="col col-xl-2 w-15"><img src="images/bookAI.jfif" alt="diet book" height="100%" width="100%"></div>
-        <div class="col col-xl-2 w-15"><img src="images/doorway_pull-up_bar.png" alt="pull up bar" height="100%" width="100%"></div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/bookAI.jfif"
+            alt="diet book"
+            height="90%"
+            width="100%"
+            title="Diet Book with the Knowledge of many health professionals. ($20)"
+          />
+        </div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/doorway_pull-up_bar.png"
+            alt="pull up bar"
+            height="90%"
+            width="100%"
+            title="Pull Up Bar, extremely durable and will stay attached to the wall. ($45)"
+          />
+        </div>
 
         <div class="w-100 d-lg-none"></div>
 
-        <div class="col col-xl-2 w-15"><img src="images/hyreoflaskAI.jfif" alt="flask" height="100%" width="100%"></div>
-        <div class="col col-xl-2 w-15"><img src="images/gymbagAI.jfif" alt="gym bag" height="100%" width="100%"></div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/hyreoflaskAI.jfif"
+            alt="flask"
+            height="90%"
+            width="100%"
+            title="Hydro Flask, hydrophobic and leakage free. ($15)"
+          />
+        </div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/gymbagAI.jfif"
+            alt="gym bag"
+            height="90%"
+            width="100%"
+            title="Gym bag, carries all of the things you need at the gym. ($50)"
+          />
+        </div>
       </div>
 
       <div class="row justify-content-between mt-3">
-        <div class="col col-xl-2 w-15"><img src="images/yogaballAI.jfif" alt="yoga ball" height="100%" width="100%"></div>
-        <div class="col col-xl-2 w-15"><img src="images/ResistenceBandsAI.jfif" alt="resistance bands" height="100%" width="100%"></div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/yogaballAI.jfif"
+            alt="yoga ball"
+            height="90%"
+            width="100%"
+            title="Yoga ball that can withstand 300lbs. ($10)"
+          />
+        </div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/ResistenceBandsAI.jfif"
+            alt="resistance bands"
+            height="90%"
+            width="100%"
+            title="Resistance bands, made with highly resistant fabric to fit any scenario. ($15)"
+          />
+        </div>
 
         <div class="w-100 d-lg-none"></div>
 
-        <div class="col col-xl-2 w-15"><img src="images/barbell glovesAI.jfif" alt="bar bell gloves" height="100%" width="100%"></div>
-        <div class="col col-xl-2 w-15"><img src="images/exercisematAI.jfif" alt="exercise mat" height="100%" width="100%"></div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/barbell glovesAI.jfif"
+            alt="bar bell gloves"
+            height="90%"
+            width="100%"
+            title = "Bar bell gloves, breathable and adjustable so it can fit all sizes. ($20)"
+          />
+        </div>
+        <div class="col col-xl-2 w-15">
+          <img
+            src="images/exercisematAI.jfif"
+            alt="exercise mat"
+            height="90%"
+            width="100%"
+            title = "Exercise mat, highly resistant so it lasts long making it fit all types of exercises. ($15) "
+          />
+        </div>
       </div>
 
       <div class="row mt-3">
@@ -179,6 +294,28 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="cart.js"></script>
+
+    <script>
+      const userDropdown = document.getElementById("user-dropdown");
+      const loginButton = document.getElementById("login-button");
+      const dropdown = document.querySelector(".dropdown");
+      const cartButton = document.getElementById("cart-button");
+      const changeAccount = document.getElementById("changeAccount");
+
+      if (localStorage.getItem("username")) {
+        userDropdown.textContent = localStorage.getItem("username");
+        loginButton.style.display = "none";
+        dropdown.style.display = "block";
+      }
+      cartButton.addEventListener("click", function () {
+        window.location.href = "cart.html";
+
+      });
+      changeAccount.addEventListener("click", function(){
+        window.location.href = "login.html";
+      })
+    </script>
   </body>
 </html>
 <!--random comment-->
