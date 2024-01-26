@@ -48,6 +48,7 @@ body {
 .logo-div p {
   font-family: "horizon";
   letter-spacing: 1px;
+  margin-right: 20px;
 }
 
 .nav-link {
@@ -69,20 +70,13 @@ dark pink e1a298
 black 0d160d
 light pink ecd2da */
 
-@media (max-width: 991px) {
-  .logo-div {
-    margin: auto;
-    border: none;
-  }
-}
-
 /*  */
 div#aboutpgstory {
   width: 70%;
 
   margin: auto;
-  background-color: rgb(27, 44, 44);
-  outline: 1px solid white;
+  background-color: rgb(43, 1, 1);
+  outline: 1px solid rgba(255, 255, 255, 0.999);
   border-radius: 1rem;
   padding: 20px;
   margin: auto;
@@ -91,7 +85,7 @@ div#aboutpgstory {
   margin-bottom: 30px;
 }
 div#aboutpgstory p {
-  color: white;
+  color: rgba(255, 255, 255, 0.858);
   font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   line-height: 30px;
@@ -117,41 +111,78 @@ div.col-xl-2:hover {
 /* <!-- contact webpage css start --> */
 div#container-top {
   width: 100vw;
-  height: 40vh;
-  outline: 1px solid white;
-  background-color: ;
-}
+  height: 30vh;
+  outline: 0px solid white;
+S}
 h1#top-text {
   position: relative;
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  top: 200px;
+  top: 100px;
 }
 div#bottom-container {
   width: 100vw;
-  height: 50vh;
+  height: 56.5vh;
+  
 }
 
 div.info-box {
   outline: 2px solid white;
   display: inline-block;
-  height: 40vh;
+  height: 30vh;
   width: 25vw;
-  margin: 25px;
-  margin-left: 80px;
+  margin: 15px;
+  margin-left: 126px;
+  margin-top: 50px;
 }
 div#box1 {
-  background-image: url("/images/map-imageAI.jfif");
-  /* background-size: ; */
+  width: 20vw;
+  background-image: url(/images/map-imageAI.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 div#box2 {
   background-color: wheat;
+  position: relative;
+  bottom: 105px;
+}
+
+h1.text-top-h{
+  text-align: center;
+}
+
+p.contact-text{
+  text-align: center;
+  color: black;
+  font-size: 22px;
+}
+
+input.pitch-input {
+  background-color: wheat;
+  border: 0px;
+  color: blue;
+}
+
+input::placeholder {
+  color: blue;
+}
+input#name-input {
+  width: 142px;
+}
+
+input#contact-input {
+  width: 77px;
+}
+input#work-position-input {
+  width: 240px;
 }
 
 div#box3 {
   background-color: wheat;
+  position: relative;
+  bottom: 97px;
 }
 mark {
   color: aqua;
@@ -176,11 +207,36 @@ div#3 {
 h1#total-cart-deductable {
   color: white;
   font-family: "horizon";
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   background-color: rgb(27, 44, 44);
   outline: 2px solid white;
   width: 60%;
   margin: 20px auto;
   text-align: left;
   padding: 10px;
+}
+
+.home_summary {
+  font-family: "Open Sans";
+  font-size: 1.1rem;
+}
+
+@media (max-width: 991px) {
+  .logo-div {
+    margin: auto;
+    border: none;
+  }
+
+  h1#total-cart-deductable {
+    font-size: 0.8rem;
+  }
+
+  .logo-div p {
+    margin-right: 1px;
+  }
+}
+
+img.product-image {
+  width: 10vh;
+  height: 10vh;
 }

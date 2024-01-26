@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about-index</title>
+    <title>ELEVATE About</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
+    <div class="container text-center">
     <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
         <div class="logo-div">
@@ -24,7 +25,7 @@
               height="75px"
               width="75px"
           /></span>
-          <p class="d-inline-block mt-4 fs-3 me-3">ELEVATE</p>
+          <p class="d-inline-block mt-4 fs-3">ELEVATE</p>
         </div>
 
         <button
@@ -49,13 +50,34 @@
             >
             <a href="about_index.html" class="nav-link mx-5">About</a>
             <a href="contact.html" class="nav-link mx-5">Contact</a>
-            <a href="login.html" class="nav-link mx-5"
+            <a href="login.html" id="login-button" class="nav-link mx-5"
               ><span id="Login">Login/Register</span></a
             >
+
+            <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle bg-dark mt-2"
+                    id="user-dropdown"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    username should be here
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" id="cart-button" href="#"
+                        >Cart</a>
+                    </li>
+                    <li><a class="dropdown-item" id="changeAccount" href="#">Change Accounts</a>
+                    </li>
+                  </ul>
+            </div>
           </div>
         </div>
       </div>
     </nav>
+    </div>
 <div id = "aboutpgstory" style ="color:white; font-size:1.4em; ">
   <p>
     Elevate started with a group of professionals in health, wellness, and technology. These professionals used their knowledge and shared vision to create Elevate.
@@ -79,7 +101,32 @@
 </div>
 
 
+<!-- nav bar functionality -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
+    <script>
+      const userDropdown = document.getElementById("user-dropdown");
+      const loginButton = document.getElementById("login-button");
+      const dropdown = document.querySelector(".dropdown");
+      const cartButton = document.getElementById("cart-button");
+      const changeAccount = document.getElementById("changeAccount");
 
+      if (localStorage.getItem("username")) {
+        userDropdown.textContent = localStorage.getItem("username");
+        loginButton.style.display = "none";
+        dropdown.style.display = "block";
+      }
+      cartButton.addEventListener("click", function () {
+        window.location.href = "cart.html";
+
+      });
+      changeAccount.addEventListener("click", function(){
+        window.location.href = "login.html";
+      })
+    </script>
 </body>
 </html>

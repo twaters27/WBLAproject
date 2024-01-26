@@ -1,3 +1,5 @@
+const globalProducts = [];
+
 const items = [
   ["kb", 75], // Kettlebell
   ["jr", 10], // Jump Rope
@@ -18,8 +20,9 @@ const items = [
 ];
 
 let totalCartPrice = 0;
+let currentPrice = 0;
 
-const products = document.querySelectorAll(".col");
+const products = document.querySelectorAll(".col"); 
 
 const totalCartDeductableText = document.getElementById(
   "total-cart-deductable"
@@ -30,7 +33,34 @@ for (let i = 0; i < items.length; i++) {
 
   products[i].addEventListener("click", function () {
     totalCartPrice += items[i][1];
-    totalCartDeductableText.textContent =
+    curentPrice = item[i][1];
+    if(totalCartPrice === 0){
+      totalCartDeductableText.textContent = "Total Cart Deductable: $0"
+    }
+    else if(totalCartPrice > 0){
+      totalCartDeductableText.textContent =
       "Total Cart Deductable: $" + totalCartPrice;
+    }
+    
+
+      // globalProducts.push(products[i]);
+      // //sessionStorage.setItem("globalProduct", JSON.stringify(products[i]));
+      // sessionStorage.setItem("globalProducts", JSON.stringify(globalProducts));
   });
 }
+products.forEach((product) => {
+  product.addEventListener("click", () => {
+    const image = product.querySelector("img");
+    const productData = {
+      src: image.getAttribute("src"),
+      //alt: image.getAttribute("alt"),
+      height: image.getAttribute("height"),
+      width: image.getAttribute("width"),
+    };
+    globalProducts.push(productData);
+    console.log(globalProducts);
+    sessionStorage.setItem("globalProducts", JSON.stringify(globalProducts));
+  });
+});
+
+// This is a cool comment.
