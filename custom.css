@@ -13,10 +13,11 @@ body {
 }
 
 [class*="col"] {
-  padding: 1rem;
-  background-color: #0d160d;
+  /* padding: 1rem; */
+  background-color: #26272b;
   color: white;
   border: 1px solid #fff;
+  
 }
 
 .navbar {
@@ -64,6 +65,10 @@ body {
   height: 100%;
 }
 
+.p-0{
+  box-shadow: 2px 3px 8px 5px rgba(0,0,0,0.9);
+}
+
 /* crimson 6e271b
 light red bb3e21
 dark pink e1a298
@@ -85,7 +90,7 @@ div#aboutpgstory {
   margin-bottom: 30px;
 }
 div#aboutpgstory p {
-  color: rgba(255, 255, 255, 0.858);
+  color: rgb(206, 202, 202);
   font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   line-height: 30px;
@@ -123,7 +128,7 @@ h1#top-text {
 }
 div#bottom-container {
   width: 100vw;
-  height: 56.5vh;
+  height: 57.87vh;
   
 }
 
@@ -237,6 +242,24 @@ h1#total-cart-deductable {
 }
 
 img.product-image {
-  width: 10vh;
-  height: 10vh;
+  width: 20vh;
+  height: 20vh;
+  margin: 10px;
+  display:inline-block;
+}
+div.goober{
+  width:75%;
+  margin:20px auto;
+  margin:20px auto;
+  
+}
+p.price-text{
+  font-size:2rem;
+  display:inline-block;
+  color:white;
+  
+}
+div.goob {
+  text-align:center;
+  margin-right:10px;
 }
