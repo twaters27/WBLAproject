@@ -10,7 +10,7 @@ const items = [
   ["rs", 40], // Running Shoes
   ["pb", 90], // Punching Bag
   ["sud", 100], // Stand-up Desk
-  ["hh", 7], // Hula Hoop
+  ["hh", 10], // Hula Hoop
   ["hb", 35], // Health Book
   ["pub", 45], // Pull-up bar
   ["hf", 15], // Hydroflask

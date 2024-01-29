@@ -119,6 +119,7 @@
             placeholder="Position you want to apply for"
           />
         </p>
+        <div id="send-button">Send</div>
       </div>
     </div>
 
@@ -134,6 +135,8 @@
       const dropdown = document.querySelector(".dropdown");
       const cartButton = document.getElementById("cart-button");
       const changeAccount = document.getElementById("changeAccount");
+      const sendButton = document.getElementById("send-button");
+      const pitchInputs = document.querySelectorAll(".pitch-input");
 
       if (localStorage.getItem("username")) {
         userDropdown.textContent = localStorage.getItem("username");
@@ -146,6 +149,7 @@
       changeAccount.addEventListener("click", function () {
         window.location.href = "login.html";
       });
+      
     </script>
   </body>
 </html>

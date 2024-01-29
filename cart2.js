@@ -25,13 +25,28 @@ productData.forEach((product) => {
     image.width = product.width;
     image.price = product.price;
 
+    div.appendChild(image);
+
     const priceText = document.createElement("p");
     priceText.classList.add("price-text");
     priceText.textContent = "Item Price: $" + image.price;
     div.appendChild(priceText);
-
-    div.appendChild(image);
+    
     console.log(div);
     document.body.appendChild(div);
 });
+
+const checkOutDiv = document.createElement("div");
+checkOutDiv.classList.add("check-out-div");
+document.body.appendChild(checkOutDiv);
+const checkOutButton = document.createElement("button");
+checkOutButton.classList.add("check-out-button");
+checkOutButton.textContent = "Check Out";
+checkOutDiv.appendChild(checkOutButton);
+
+checkOutButton.addEventListener("click", function(){
+    alert(`Your total is $${totalPrice}. Thank you for shopping with us!`);
+    
+});
+
 // This is a comment!
